@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../amiasea-enterprise-host/Amiasea.Enterprise.Host/Amiasea.Enterprise.Host.csproj" />
+  <Project Path="../amiasea-enterprise-cap-core/Amiasea.Enterprise.Core.Api/Amiasea.Enterprise.Core.Api.csproj" />
+  <Project Path="../amiasea-enterprise-cap-core/Amiasea.Enterprise.Core.Data.Entity/Amiasea.Enterprise.Core.Data.Entity.csproj" />
+  <Project Path="../amiasea-enterprise-cap-core/Amiasea.Enterprise.Core.Data.Migrations/Amiasea.Enterprise.Core.Data.Migrations.csproj" />
+</Solution>
