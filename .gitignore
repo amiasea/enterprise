@@ -1,0 +1,13 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.plan
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+
+# VS Code workspace settings
+.vscode/

@@ -5,29 +5,13 @@
       "path": "."
     },
     {
-      "name": "amiasea-enterprise-host",
-      "path": "../amiasea-enterprise-host"
+      "name": "amiasea-enterprise-daggerverse",
+      "path": "../amiasea-enterprise-daggerverse"
     },
     {
-      "name": "amiasea-enterprise-cap-core",
-      "path": "../amiasea-enterprise-cap-core"
+      "name": "amiasea-image-utility",
+      "path": "../amiasea-image-utility"
     },
-    {
-      "name": "amiasea-enterprise-capability-model",
-      "path": "../amiasea-enterprise-capability-model"
-    },
-    {
-      "name": "amiasea-cap-install-engineering-model",
-      "path": "../amiasea-cap-install-engineering-model"
-    },
-    {
-      "name": "amiasea-enterprise-ui",
-      "path": "../amiasea-enterprise-ui"
-    },
-    {
-      "name": "amiasea-enterprise-artifacts-delivery",
-      "path": "../amiasea-enterprise-artifacts-delivery"
-    }
   ],
 "settings": {
     "terminal.integrated.profiles.windows": {
@@ -44,6 +28,7 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.indentSize": 2,
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "dotnet.defaultSolution": "amiasea-enterprise/Amiasea.Enterprise.slnx"
 	}
 }
