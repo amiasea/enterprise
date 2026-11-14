@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.16.2"
+  required_version = ">= 1.16.5"
 
   required_providers {
     azurerm = {
@@ -21,8 +21,8 @@ provider "azurerm" {
 }
 
 provider "azurerm" {
-  alias = "imperative"
-  subscription_id = "c7450111-a44d-47e1-86a4-dce7ad5769bf"
+  alias = "institutive"
+  subscription_id = "da348b35-29b6-4906-85ec-4a097aa5fe04"
 
   features {}
 }

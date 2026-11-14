@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.16.2"
+  required_version = ">= 1.16.5"
 
   required_providers {
     azurerm = {
@@ -39,8 +39,8 @@ provider "azurerm" {
 }
 
 provider "azurerm" {
-  alias           = "imperative"
-  subscription_id = "c7450111-a44d-47e1-86a4-dce7ad5769bf"
+  alias           = "institutive"
+  subscription_id = "bf451fd9-d382-4da8-9c1a-179a96a4d2f3"
   features {}
 }
 
@@ -48,12 +48,7 @@ provider "azapi" {}
 
 provider "tfe" {
   organization = var.tfe_organization_name
-}
-
-provider "tfe" {
-  alias        = "development"
-  organization = var.tfe_organization_name
-  token        = var.tfe_development_token
+  token        = var.tfe_token
 }
 
 provider "aws" {
@@ -63,8 +58,28 @@ provider "aws" {
 
 provider "github" {
   owner = "amiasea"
-
   app_auth {
+
+  }
+}
+
+# provider "github" {
+#   alias = "enterprise_solution"
+#   owner = "amiasea-enterprise-orchard"
+#   app_auth {
+#     id              = var.amiasea_github_app_id
+#     installation_id = var.enterprise_orchard_github_app_installation_id
+#     pem_file        = var.amiasea_github_app_pem_file
+#   }
+# }
+
+provider "github" {
+  alias = "enterprise_orchard"
+  owner = "amiasea-enterprise-orchard"
+  app_auth {
+    id              = var.amiasea_github_app_id
+    installation_id = var.enterprise_orchard_github_app_installation_id
+    pem_file        = var.amiasea_github_app_pem_file
   }
 }
 

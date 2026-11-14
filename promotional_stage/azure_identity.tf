@@ -32,15 +32,15 @@ resource "azurerm_user_assigned_identity" "enterprise_api" {
 #   billing_scope_id  = data.azurerm_billing_mca_account_scope.imperative.id
 # }
 
-data "azurerm_key_vault" "imperative" {
-  name                = "kv-amiasea-imperative"
-  resource_group_name = "rg-amiasea-imperative"
+data "azurerm_key_vault" "institutive" {
+  name                = "kv-amiasea-institutive"
+  resource_group_name = "amiasea-enterprise-institutive"
 
-  provider = azurerm.imperative
+  provider = azurerm.institutive
 }
 
-resource "azurerm_role_assignment" "enterprise_imperative_key_vault_certificate_user" {
-  scope                = data.azurerm_key_vault.imperative.id
+resource "azurerm_role_assignment" "enterprise_institutive_key_vault_certificate_user" {
+  scope                = data.azurerm_key_vault.institutive.id
   role_definition_name = "Key Vault Secrets User"
   principal_id         = azurerm_user_assigned_identity.enterprise_workload.principal_id
   principal_type       = "ServicePrincipal"

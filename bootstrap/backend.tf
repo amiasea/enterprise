@@ -3,7 +3,7 @@ terraform {
     organization = "amiasea"
 
     workspaces {
-      project = "imperative"
+      project = "institutive"
       name    = "enterprise"
     }
   }

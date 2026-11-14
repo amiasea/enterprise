@@ -15,3 +15,11 @@ resource "aws_iam_openid_connect_provider" "github" {
   # for this well-known provider.
   thumbprint_list = []
 }
+
+resource "aws_iam_openid_connect_provider" "hcp_terraform" {
+  url = "https://app.terraform.io"
+
+  client_id_list = [
+    "aws.workload.identity"
+  ]
+}

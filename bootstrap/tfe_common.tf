@@ -1,9 +1,4 @@
 #import
-data "tfe_project" "imperative" {
-  name = "imperative"
-  organization = var.tfe_organization_name
-}
-
 data "tfe_project" "institutive" {
   name = "institutive"
   organization = var.tfe_organization_name
@@ -31,12 +26,3 @@ resource "tfe_workspace" "operative" {
   organization = var.tfe_organization_name
 }
 
-resource "tfe_registry_module" "espalier" {
-  name = "espalier"
-
-  
-}
-
-data "tfe_github_app_installation" "gha_installation" {
-  name = var.tfe_organization_name
-}

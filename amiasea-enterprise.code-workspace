@@ -1,16 +1,16 @@
 {
   "folders": [
     {
-      "name": "amiasea-enterprise",
-      "path": "."
+      "name": "bootstrap",
+      "path": "./bootstrap"
     },
     {
-      "name": "amiasea-enterprise-daggerverse",
-      "path": "../amiasea-enterprise-daggerverse"
+      "name": "bootstrap_development",
+      "path": "./bootstrap_development"
     },
     {
-      "name": "amiasea-image-utility",
-      "path": "../amiasea-image-utility"
+      "name": "promotional_stage",
+      "path": "./promotional_stage"
     },
   ],
 "settings": {
@@ -20,7 +20,7 @@
         "args": [
           "-NoExit",
           "-Command",
-          "$credentials = Get-Content \"$env:USERPROFILE\\AppData\\Roaming\\terraform.d\\credentials.tfrc.json\" -Raw | ConvertFrom-Json; $env:TFE_TOKEN = $credentials.credentials.'app.terraform.io'.token"
+          "$credentials = Get-Content \"$env:USERPROFILE\\AppData\\Roaming\\terraform.d\\credentials.tfrc.json\" -Raw | ConvertFrom-Json; $env:TF_TOKEN = $credentials.credentials.'app.terraform.io'.token"
         ]
       }
     },
