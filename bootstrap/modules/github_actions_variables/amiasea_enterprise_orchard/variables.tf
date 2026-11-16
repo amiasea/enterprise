@@ -26,7 +26,7 @@ variable "gha_id" {
   type = string
 }
 
-variable "pomology_propagation_stack_id" {
+variable "gha_client_id" {
   type = string
 }
 

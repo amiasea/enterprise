@@ -71,3 +71,9 @@ resource "github_actions_organization_variable" "github_app_id" {
   value                   = var.gha_id
   visibility    = "all"
 }
+
+resource "github_actions_organization_variable" "github_app_client_id" {
+  variable_name           = "AMIASEA_GITHUB_APP_CLIENT_ID"
+  value                   = var.gha_client_id
+  visibility    = "all"
+}

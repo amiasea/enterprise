@@ -27,3 +27,21 @@ output "aws_account_id" {
   description = "AWS account ID in which the foundation is deployed."
   value       = data.aws_caller_identity.current.account_id
 }
+
+output "orchard_packages_repository" {
+  description = "The shared CodeArtifact repository for orchard packages."
+
+  value = {
+    name = aws_codeartifact_repository.orchard_repository.repository
+    arn  = aws_codeartifact_repository.orchard_repository.arn
+  }
+}
+
+output "solution_topology_packages_repository" {
+  description = "The CodeArtifact repository for solution topology packages."
+
+  value = {
+    name = aws_codeartifact_repository.solution_topology_repository.repository
+    arn  = aws_codeartifact_repository.solution_topology_repository.arn
+  }
+}

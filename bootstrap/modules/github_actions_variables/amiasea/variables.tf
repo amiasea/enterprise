@@ -26,14 +26,6 @@ variable "gha_id" {
   type = string
 }
 
-variable "pomology_propagation_stack_id" {
-  type = string
-}
-
-variable "pomology_pruning_stack_id" {
-  type = string
-}
-
 variable "github_organization_id" {
   type = string
 }

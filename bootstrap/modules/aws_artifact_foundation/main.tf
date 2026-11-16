@@ -23,3 +23,21 @@ resource "aws_iam_openid_connect_provider" "hcp_terraform" {
     "aws.workload.identity"
   ]
 }
+
+resource "aws_codeartifact_repository" "orchard_repository" {
+  repository = "orchard"
+  domain     = aws_codeartifact_domain.amiasea.domain
+
+  description = "Shared, unrestricted repository for Amiasea orchard packages."
+
+  external_connections {
+    external_connection_name = "public:nuget-org"
+  }
+}
+
+resource "aws_codeartifact_repository" "solution_topology_repository" {
+  repository = "solution_topology"
+  domain     = aws_codeartifact_domain.amiasea.domain
+
+  description = "Repository for Amiasea solution topology that orchard packages are admitted into."
+}

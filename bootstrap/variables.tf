@@ -54,6 +54,10 @@ variable "amiasea_github_app_id" {
   type      = string
 }
 
+variable "amiasea_github_app_client_id" {
+  type      = string
+}
+
 variable "r2_access_key_id" {
   type      = string
   sensitive = true

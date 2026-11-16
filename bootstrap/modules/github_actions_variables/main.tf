@@ -8,8 +8,6 @@ module "amiasea" {
   azure_institutive_subscription_id = var.azure_institutive_subscription_id
   tfe_gha_installation_id           = var.tfe_gha_installation_id
   gha_id                            = var.gha_id
-  pomology_propagation_stack_id     = var.pomology_propagation_stack_id
-  pomology_pruning_stack_id         = var.pomology_pruning_stack_id
   github_organization_id            = var.github_organization_id
   repository_ids                    = var.institutive_repository_ids
 
@@ -31,7 +29,7 @@ module "amiasea_enterprise_orchard" {
   azure_institutive_subscription_id = var.azure_institutive_subscription_id
   tfe_gha_installation_id           = var.tfe_gha_installation_id
   gha_id                            = var.gha_id
-  pomology_propagation_stack_id     = var.pomology_propagation_stack_id
+  gha_client_id                     = var.gha_client_id
   github_organization_id            = var.github_organization_id
 
   institutive_key_vault_name                 = var.institutive_key_vault_name
